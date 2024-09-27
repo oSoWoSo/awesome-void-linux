@@ -13,3 +13,6 @@
 [submodule "xtools"]
 	path = xtools
 	url = https://github.com/leahneukirchen/xtools
+[submodule "xxtools"]
+	path = xxtools
+	url = https://github.com/Piraty/xxtools
