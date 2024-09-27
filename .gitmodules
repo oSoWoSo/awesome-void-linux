@@ -34,3 +34,6 @@
 [submodule "abyss-packages"]
 	path = abyss-packages
 	url = https://github.com/mobinmob/abyss-packages
+[submodule "passthrough_helper_void"]
+	path = passthrough_helper_void
+	url = https://github.com/oSoWoSo/passthrough_helper_void
