@@ -22,3 +22,6 @@
 [submodule "void-packages"]
 	path = void-packages
 	url = https://github.com/void-linux/void-packages
+[submodule "void-docs"]
+	path = void-docs
+	url = https://github.com/void-linux/void-docs
