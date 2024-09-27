@@ -16,3 +16,6 @@
 [submodule "xxtools"]
 	path = xxtools
 	url = https://github.com/Piraty/xxtools
+[submodule "voidbuilds-mklive"]
+	path = voidbuilds-mklive
+	url = https://github.com/void-builds/void-mklive
