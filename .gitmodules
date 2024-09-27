@@ -1,0 +1,12 @@
+[submodule "void-mklive"]
+	path = void-mklive
+	url = https://github.com/void-linux/void-mklive
+[submodule "hrmpf"]
+	path = hrmpf
+	url = https://github.com/leahneukirchen/hrmpf
+[submodule "Void-In-Termux"]
+	path = Void-In-Termux
+	url = https://github.com/oSoWoSo/Void-In-Termux
+[submodule "Void-Wallpapers"]
+	path = Void-Wallpapers
+	url = https://github.com/oSoWoSo/Void-Wallpapers
