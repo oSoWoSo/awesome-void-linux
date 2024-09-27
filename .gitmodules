@@ -31,3 +31,6 @@
 [submodule "vbm"]
 	path = vbm
 	url = https://github.com/oSoWoSo/vbm
+[submodule "abyss-packages"]
+	path = abyss-packages
+	url = https://github.com/mobinmob/abyss-packages
