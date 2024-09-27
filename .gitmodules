@@ -19,3 +19,6 @@
 [submodule "voidbuilds-mklive"]
 	path = voidbuilds-mklive
 	url = https://github.com/void-builds/void-mklive
+[submodule "void-packages"]
+	path = void-packages
+	url = https://github.com/void-linux/void-packages
