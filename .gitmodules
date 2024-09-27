@@ -25,3 +25,6 @@
 [submodule "void-docs"]
 	path = void-docs
 	url = https://github.com/void-linux/void-docs
+[submodule "vpsm"]
+	path = vpsm
+	url = https://github.com/oSoWoSo/vpsm
