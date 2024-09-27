@@ -10,3 +10,6 @@
 [submodule "Void-Wallpapers"]
 	path = Void-Wallpapers
 	url = https://github.com/oSoWoSo/Void-Wallpapers
+[submodule "xtools"]
+	path = xtools
+	url = https://github.com/leahneukirchen/xtools
