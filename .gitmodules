@@ -28,3 +28,6 @@
 [submodule "vpsm"]
 	path = vpsm
 	url = https://github.com/oSoWoSo/vpsm
+[submodule "vbm"]
+	path = vbm
+	url = https://github.com/oSoWoSo/vbm
