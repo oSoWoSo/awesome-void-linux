@@ -37,3 +37,6 @@
 [submodule "passthrough_helper_void"]
 	path = passthrough_helper_void
 	url = https://github.com/oSoWoSo/passthrough_helper_void
+[submodule "cereus-packages"]
+	path = cereus-packages
+	url = https://github.com/CereusLinuxProject/cereus-packages
