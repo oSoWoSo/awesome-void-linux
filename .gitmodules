@@ -37,3 +37,6 @@
 [submodule "cereus-packages"]
 	path = cereus-packages
 	url = https://github.com/CereusLinuxProject/cereus-packages
+[submodule "hyprland-void"]
+	path = hyprland-void
+	url = https://github.com/Makrennel/hyprland-void
