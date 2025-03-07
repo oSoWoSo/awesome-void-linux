@@ -1,42 +1,56 @@
-[submodule "void-mklive"]
-	path = void-mklive
+[submodule "mklive"]
+	path = mklive
 	url = https://github.com/void-linux/void-mklive
+	branch = master
 [submodule "hrmpf"]
 	path = hrmpf
 	url = https://github.com/leahneukirchen/hrmpf
-[submodule "Void-In-Termux"]
-	path = Void-In-Termux
+	branch = master
+[submodule "termux"]
+	path = termux
 	url = https://github.com/oSoWoSo/Void-In-Termux
-[submodule "Void-Wallpapers"]
-	path = Void-Wallpapers
+	branch = main
+[submodule "wallpapers"]
+	path = wallpapers
 	url = https://github.com/oSoWoSo/Void-Wallpapers
+	branch = main
 [submodule "xtools"]
 	path = xtools
 	url = https://github.com/leahneukirchen/xtools
+	branch = master
 [submodule "xxtools"]
 	path = xxtools
 	url = https://github.com/Piraty/xxtools
+	branch = master
 [submodule "voidbuilds-mklive"]
 	path = voidbuilds-mklive
 	url = https://github.com/void-builds/void-mklive
-[submodule "void-packages"]
-	path = void-packages
+	branch = master
+[submodule "packages"]
+	path = packages
 	url = https://github.com/void-linux/void-packages
-[submodule "void-docs"]
-	path = void-docs
+	branch = master
+[submodule "docs"]
+	path = docs
 	url = https://github.com/void-linux/void-docs
+	branch = master
 [submodule "vbm"]
 	path = vbm
 	url = https://github.com/oSoWoSo/vbm
+	branch = vbm
 [submodule "abyss-packages"]
 	path = abyss-packages
-	url = https://github.com/mobinmob/abyss-packages
-[submodule "passthrough_helper_void"]
-	path = passthrough_helper_void
+	url = https://codeberg.org/mobinmob/abyss-packages
+	branch = main
+[submodule "passthrough_helper"]
+	path = passthrough_helper
 	url = https://github.com/oSoWoSo/passthrough_helper_void
+	branch = master
 [submodule "cereus-packages"]
 	path = cereus-packages
-	url = https://github.com/CereusLinuxProject/cereus-packages
-[submodule "hyprland-void"]
-	path = hyprland-void
+	url = https://github.com/CereusLinuxProject/cereus-pkgs
+	branch = master
+[submodule "hyprland"]
+	path = hyprland
 	url = https://github.com/Makrennel/hyprland-void
+	branch = master
