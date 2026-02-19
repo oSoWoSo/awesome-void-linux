@@ -3,6 +3,7 @@ name: Update submodules
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:

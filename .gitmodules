@@ -10,9 +10,9 @@
 	path = termux
 	url = https://github.com/oSoWoSo/Void-In-Termux
 	branch = main
-[submodule "wallpapers"]
-	path = wallpapers
-	url = https://github.com/oSoWoSo/Void-Wallpapers
+[submodule "artwork"]
+	path = artwork
+	url = https://github.com/oSoWoSo/void-artwork
 	branch = main
 [submodule "xtools"]
 	path = xtools
@@ -29,10 +29,6 @@
 [submodule "packages"]
 	path = packages
 	url = https://github.com/void-linux/void-packages
-	branch = master
-[submodule "docs"]
-	path = docs
-	url = https://github.com/void-linux/void-docs
 	branch = master
 [submodule "vbm"]
 	path = vbm
@@ -54,3 +50,6 @@
 	path = hyprland
 	url = https://github.com/Makrennel/hyprland-void
 	branch = master
+[submodule "void-docs"]
+	path = void-docs
+	url = https://github.com/void-linux/void-docs
