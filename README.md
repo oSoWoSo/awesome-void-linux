@@ -67,12 +67,12 @@ This repository tries to gather anything Void Linux related to one place
   [SourceForge](https://sourceforge.net/projects/vpup/)  
   [git](https://gitlab.com/djsumdog/voidup)  
 
+- PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world/)  
+  [ISOs](https://peppermintos.org/PepVoid/)
+
 ### Dormant spins?
 - voidJW OS - [SF](https://sourceforge.net/projects/voidjw/)  
 - VX Linux - [git](https://gitlab.com/dessington/vx-linux)
-
-### Planned
-- PeppermintOS - [info](https://peppermintos.com/2025/02/our-progress-and-plans-in-2025/)
 
 *Custom repository could be added to Void Linux  
  (`/etc/xbps.d` should be created first `sudo mkdir -p /etc/xbps.d`)  
