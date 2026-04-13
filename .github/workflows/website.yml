@@ -40,6 +40,14 @@ jobs:
         run: |
           chmod a+x create-web
           ./create-web build
+      
+      - name: commit
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"       
+          git add docs/*
+          git commit -m "Update website"
+          git push
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
