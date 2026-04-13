@@ -13,6 +13,17 @@ This repository tries to gather anything Void Linux related to one place
   [SourceForge](https://sourceforge.net/projects/agarimos/)  
   [git](https://github.com/agarimoslinux)  
 
+- AbeirOS - Like AgarimOS and AfagOS, AbeirOS is based on Void Linux, and it's created using void-mklive  
+  [homepage](https://sourceforge.net/projects/abeiros/)  
+
+- AfagOS - Aims to provide a smooth, pleasant, and user-friendly experience  
+  [homepage](https://sourceforge.net/projects/afagos/)  
+
+- BRGV-OS - Aims to facilitate developers, researchers and users to transitioning from Windows® or macOS® to Linux® by maintaining familiar operational habits and workflows.  
+  DE:  
+  [homepage](https://github.com/florintanasa/brgvos-void/)  
+  [repository](https://github.com/florintanasa/brgvos-void-repository)  
+
 - Cereus Linux - (custom [repos](https://codeberg.org/cereus-linux/cereus-pkgs)) Distrbution focused on give an user-friendly experience  
   `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core`*  
   `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-extra`*  
@@ -44,6 +55,11 @@ This repository tries to gather anything Void Linux related to one place
   [SourceForge](https://sourceforge.net/projects/lazylinux/)  
   [git](https://github.com/lazylinuxos)  
 
+- NekoVoid -  
+  DE: Mate  
+  [homepage](https://neko-void.sourceforge.io)  
+  [git](https://codeberg.org/javiercplus/Neko-Void)  
+
 - Noid Linux - (custom [repo](https://git.ch-naseem.com/noid-linux/xbps-repo)) Naz's personal customization of Void Linux  
   `https://github.com/noid-linux/xbps-repo/releases/latest/download`*  
   DE: Xfce  
@@ -61,11 +77,19 @@ This repository tries to gather anything Void Linux related to one place
   [Homepage](https://splitlinux.org/)  
   [git](https://gitlab.com/kevcrumb/split-mklive)  
 
+- T4N-OS - Minimal Void Linux Experience  
+  [homepage](https://t4n-labs.github.io/t4n-os/)  
+  [git](https://github.com/T4n-Labs)  
+  [vur](https://t4n-labs.github.io/vur-web/#home)  
+  [source repo](https://github.com/T4n-Labs/vur)  
+
 - VoidPup - Version of Puppy Linux built using Void Linux packages  
   DE: Jwm  
   [Forum](https://forum.puppylinux.com/viewforum.php?f=180)  
   [SourceForge](https://sourceforge.net/projects/vpup/)  
   [git](https://gitlab.com/djsumdog/voidup)  
+
+
 
 - PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world/)  
   [ISOs](https://peppermintos.org/PepVoid/)
