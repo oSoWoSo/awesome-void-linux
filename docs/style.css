@@ -39,7 +39,6 @@
   --transition: all 0.3s ease; /* Transition effects */
 
   --nav-height: 52px;
-
   --color-icon: var(--white);
 }
 
@@ -152,8 +151,9 @@ img {
   margin: 1em 0; /* Vertical margins for images */
 }
 
-img[src$=".svg"] {
-    filter: var(--filter-icon);
+/* SVG color filter — only applies to <img data-colorize> elements */
+img[data-colorize] {
+  filter: var(--filter-icon);
 }
 
 li {
@@ -175,12 +175,13 @@ nav {
 }
 
 /* Crossed release button - if no release exist */
-nav a.no-release {
+nav ul li a.no-release,
+nav ul li a.no-release:visited {
     text-decoration: line-through;
     opacity: 0.6;
 }
 
-nav a.no-release:hover {
+nav ul li a.no-release:hover {
     opacity: 1;
 }
 
