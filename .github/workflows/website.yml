@@ -1,11 +1,11 @@
 name: Build GitHub Pages from md files
 
 on:
-#  push:
+  push:
 #    branches:
 #      - main
-#    paths:
-#      - '*.md'
+    paths:
+      - '*.md'
 #      - 'docs/*.css'
 #      - 'docs/*.js'
 #      - .github/workflows/website.yml
