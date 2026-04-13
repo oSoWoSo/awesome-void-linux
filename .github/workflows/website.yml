@@ -38,7 +38,8 @@ jobs:
 
       - name: Make pages
         run: |
-          ./create build
+          chmod a+x create-web
+          ./create-web build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
