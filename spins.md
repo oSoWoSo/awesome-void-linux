@@ -89,10 +89,11 @@ This repository tries to gather anything Void Linux related to one place
   [SourceForge](https://sourceforge.net/projects/vpup/)  
   [git](https://gitlab.com/djsumdog/voidup)  
 
-
-
 - PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world/)  
   [ISOs](https://peppermintos.org/PepVoid/)
+
+- odyssey Linux (Alpha) - [homepage](https://forum.odysseylinux.org/)
+  [ISO](https://odysseylinux.org/odyssey-linux-0.21-x86_64.iso)
 
 ### Dormant spins?
 - voidJW OS - [SF](https://sourceforge.net/projects/voidjw/)  
