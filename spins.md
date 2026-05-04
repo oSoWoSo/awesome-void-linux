@@ -88,7 +88,9 @@
 - PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world/)  
   [ISOs](https://peppermintos.org/PepVoid/)
 
-- odyssey Linux (Alpha) - [homepage](https://forum.odysseylinux.org/)
+- odyssey Linux (Alpha) - BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
+  DE: Niri or Hyperland + Noctalia shell, KDE, Xfce  
+  [homepage](https://forum.odysseylinux.org/)  
   [ISO](https://odysseylinux.org/odyssey-linux-0.21-x86_64.iso)
 
 ### Dormant spins?
