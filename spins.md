@@ -1,8 +1,4 @@
-# Awesome Void Linux
-
-This repository tries to gather anything Void Linux related to one place
-
-## Void Linux spins:
+# Void Linux spins:
 - AfagOS - Provides a smooth, pleasant, and user-friendly experience  
   DE: Plasma  
   [SourceForge](https://sourceforge.net/projects/afagos/)
