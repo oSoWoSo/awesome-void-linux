@@ -30,7 +30,7 @@ jobs:
       - name: Push
         run: |
           git config user.name "oSoWoSo[bot]"
-          git config user.email "osowoso@disroot.org"
+          git config user.email "mail@osowoso.org"
           #git submodule sync --quiet --recursive
           #git submodule update --init --recursive
           git add --all
