@@ -1,4 +1,5 @@
 # Void Linux spins:
+
 - AfagOS - Provides a smooth, pleasant, and user-friendly experience  
   DE: Plasma  
   [SourceForge](https://sourceforge.net/projects/afagos/)
@@ -39,11 +40,6 @@
   DE: i3, Openbox, Qtile  
   [Homepage](https://gabeeoslinux.sourceforge.io/)  
   [SourceForge](https://sourceforge.net/projects/gabeeoslinux/)  
-
-- langitketujuh OS - The right choices for designer and desktop users  
-  DE: Kde  
-  [Homepage](https://langitketujuh.id/)  
-  [git](https://gitlab.com/langitketujuh)  
 
 - LazyLinux - Pre-configured distro with a large number of software preinstalled for almost any purpose  
   DE: Xfce  
@@ -91,11 +87,17 @@
 - odyssey Linux (Alpha) - BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
   DE: Niri or Hyperland + Noctalia shell, KDE, Xfce  
   [homepage](https://forum.odysseylinux.org/)  
-  [ISO](https://odysseylinux.org/odyssey-linux-0.21-x86_64.iso)
+  ISO: Register on forum if you want help to debug in Alpha stage
 
 ### Dormant spins?
+
 - voidJW OS - [SF](https://sourceforge.net/projects/voidjw/)  
 - VX Linux - [git](https://gitlab.com/dessington/vx-linux)
+- langitketujuh OS - The right choices for designer and desktop users  
+  DE: Kde  
+  [Homepage](https://langitketujuh.id/)  
+  [git](https://gitlab.com/langitketujuh)  
+  ISOs: Not available??
 
 *Custom repository could be added to Void Linux  
  (`/etc/xbps.d` should be created first `sudo mkdir -p /etc/xbps.d`)  
