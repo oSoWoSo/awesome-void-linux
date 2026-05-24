@@ -41,13 +41,18 @@
   [Homepage](https://gabeeoslinux.sourceforge.io/)  
   [SourceForge](https://sourceforge.net/projects/gabeeoslinux/)  
 
+- KLV-Airedale - Powerhouse in a small package. Based on a FirstRib 'Magic' initrd.gz and Overlayfs for the layering of the read-only system files
+  DE: Xfce  
+  [Homepage](https://klv-airedale.rockedge.org/)  
+  [SourceForge](https://sourceforge.net/projects/klv-airedale/)
+
 - LazyLinux - Pre-configured distro with a large number of software preinstalled for almost any purpose  
   DE: Xfce  
   [Homepage](https://lazylinuxos.github.io/)  
   [SourceForge](https://sourceforge.net/projects/lazylinux/)  
   [git](https://github.com/lazylinuxos)  
 
-- NekoVoid -  
+- NekoVoid - Void Linux's stability and minimalism with modern desktop functionality. Ships with a custom Kasha installer, and X.Org or Xlibre display servers  
   DE: Mate  
   [homepage](https://neko-void.sourceforge.io)  
   [git](https://codeberg.org/javiercplus/Neko-Void)  
