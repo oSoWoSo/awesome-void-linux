@@ -1,5 +1,8 @@
 # Void Linux spins:
 
+- AbeirOS - Like AgarimOS and AfagOS, AbeirOS is based on Void Linux, and it's created using void-mklive  
+  [homepage](https://sourceforge.net/projects/abeiros/)  
+
 - AfagOS - Provides a smooth, pleasant, and user-friendly experience  
   DE: Plasma  
   [SourceForge](https://sourceforge.net/projects/afagos/)
@@ -9,12 +12,6 @@
   [Homepage](https://linktr.ee/agarimos)  
   [SourceForge](https://sourceforge.net/projects/agarimos/)  
   [git](https://github.com/agarimoslinux)  
-
-- AbeirOS - Like AgarimOS and AfagOS, AbeirOS is based on Void Linux, and it's created using void-mklive  
-  [homepage](https://sourceforge.net/projects/abeiros/)  
-
-- AfagOS - Aims to provide a smooth, pleasant, and user-friendly experience  
-  [homepage](https://sourceforge.net/projects/afagos/)  
 
 - BRGV-OS - Aims to facilitate developers, researchers and users to transitioning from Windows® or macOS® to Linux® by maintaining familiar operational habits and workflows.  
   DE:  
@@ -68,6 +65,14 @@
   [Homepage](https://obsidianos.xyz/)  
   [git](https://github.com/Obsidian-OS)  
 
+- odyssey Linux (Alpha) - BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
+  DE: Niri or Hyperland + Noctalia shell, KDE, Xfce  
+  [homepage](https://forum.odysseylinux.org/)  
+  ISO: Register on forum if you want help to debug in Alpha stage
+
+- PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world/)  
+  [ISOs](https://peppermintos.org/PepVoid/)
+
 - T4N-OS - Minimal Void Linux Experience  
   [homepage](https://t4n-labs.github.io/t4n-os/)  
   [git](https://github.com/T4n-Labs)  
@@ -79,14 +84,6 @@
   [Forum](https://forum.puppylinux.com/viewforum.php?f=180)  
   [SourceForge](https://sourceforge.net/projects/vpup/)  
   [git](https://gitlab.com/djsumdog/voidup)  
-
-- PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world/)  
-  [ISOs](https://peppermintos.org/PepVoid/)
-
-- odyssey Linux (Alpha) - BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
-  DE: Niri or Hyperland + Noctalia shell, KDE, Xfce  
-  [homepage](https://forum.odysseylinux.org/)  
-  ISO: Register on forum if you want help to debug in Alpha stage
 
 ### Dormant spins?
 
