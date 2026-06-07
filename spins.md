@@ -85,6 +85,10 @@
   [SourceForge](https://sourceforge.net/projects/vpup/)  
   [git](https://gitlab.com/djsumdog/voidup)  
 
+- Eclipse Linux - Experimental Void Linux (musl) based distribution that boots with the [dynamod](https://github.com/sinisterMage/dynamod) init system (x86_64--musl only)  
+  [GitHub](https://github.com/TheCodeVerseHub/EclipseLinux/releases/tag/v0.1-alpha)  
+  [ISO Alpha 0.1.0](https://github.com/TheCodeVerseHub/EclipseLinux/releases/download/v0.1-alpha/eclipse-linux-0.1.0.iso)
+
 ### Dormant spins?
 
 - voidJW OS - [SF](https://sourceforge.net/projects/voidjw/)  
