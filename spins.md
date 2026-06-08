@@ -65,14 +65,6 @@
   [Homepage](https://obsidianos.xyz/)  
   [git](https://github.com/Obsidian-OS)  
 
-- odyssey Linux (Alpha) - BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
-  DE: Niri or Hyperland + Noctalia shell, KDE, Xfce  
-  [homepage](https://forum.odysseylinux.org/)  
-  ISO: Register on forum if you want help to debug in Alpha stage
-
-- PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world/)  
-  [ISOs](https://peppermintos.org/PepVoid/)
-
 - T4N-OS - Minimal Void Linux Experience  
   [homepage](https://t4n-labs.github.io/t4n-os/)  
   [git](https://github.com/T4n-Labs)  
@@ -85,9 +77,26 @@
   [SourceForge](https://sourceforge.net/projects/vpup/)  
   [git](https://gitlab.com/djsumdog/voidup)  
 
+- Vostock Linux - Hand-tuned kernel — delivering raw performance where it matters, with everything configured and ready to run out of the box
+  DE: KDE Plasma  
+  `https://repo.vostoklinux.org/current/`  
+  [homepage](https://vostoklinux.org/)  
+  [source repo](https://github.com/vostoklinux/vostok-packages)
+  
+### In development
+
 - Eclipse Linux - Experimental Void Linux (musl) based distribution that boots with the [dynamod](https://github.com/sinisterMage/dynamod) init system (x86_64--musl only)  
   [GitHub](https://github.com/TheCodeVerseHub/EclipseLinux/releases/tag/v0.1-alpha)  
   [ISO Alpha 0.1.0](https://github.com/TheCodeVerseHub/EclipseLinux/releases/download/v0.1-alpha/eclipse-linux-0.1.0.iso)
+
+- odyssey Linux (Alpha) - BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
+  DE: Niri or Hyperland + Noctalia shell, KDE, Xfce  
+  [homepage](https://forum.odysseylinux.org/)  
+  ISO: Register on forum if you want help to debug in Alpha stage
+
+- PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world/)  
+  DE: Xfce  
+  [ISOs](https://peppermintos.org/PepVoid/)
 
 ### Dormant spins?
 
@@ -104,7 +113,7 @@
   [Homepage](https://splitlinux.org/)  
   [git](https://gitlab.com/kevcrumb/split-mklive)  
 
-*Custom repository could be added to Void Linux  
+*Custom repository `vur` could be added to Void Linux  
  (`/etc/xbps.d` should be created first `sudo mkdir -p /etc/xbps.d`)  
  As root run `echo 'repository=[link]' > /etc/xbps.d/[name].conf`  
  [link] is in `code` under distributions which provides custom repo  
