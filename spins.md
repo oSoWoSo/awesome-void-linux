@@ -93,9 +93,9 @@
   [GitHub](https://github.com/TheCodeVerseHub/EclipseLinux/releases/tag/v0.1-alpha)  
   [ISO Alpha 0.1.0](https://github.com/TheCodeVerseHub/EclipseLinux/releases/download/v0.1-alpha/eclipse-linux-0.1.0.iso)
 
-- odyssey Linux (Chapter I) - BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat
-  `https://repo.odysseylinux.org/odyssey-repo/x86_64`*
-  DE: Kde, Xfce, Niri, Hyprland, Mango, Labwc
+- odyssey Linux (Chapter I) - BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
+  `https://repo.odysseylinux.org/odyssey-repo/x86_64`*  
+  DE: Kde, Xfce, Niri, Hyprland, Mango, Labwc  
   [homepage](https://forum.odysseylinux.org/)  
   [Git](https://code.odysseylinux.org/)  
   [Forum](https://argonauts.odysseylinux.org/forum.php)  
