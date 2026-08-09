@@ -11,14 +11,14 @@
   DE: Cinnamon, Gnome, Lxqt - kwin, Mate, Plasma, Xfce  
   [Homepage](https://linktr.ee/agarimos)  
   [SourceForge](https://sourceforge.net/projects/agarimos)  
-  [git](https://github.com/agarimoslinux)  
+  [git](https://github.com/agarimoslinux)
 
 - BRGV-OS - Aims to facilitate developers, researchers and users to transitioning from Windows® or macOS® to Linux® by maintaining familiar operational habits and workflows.  
   DE:  
   [homepage](https://github.com/florintanasa/brgvos-void)  
-  [repository](https://github.com/florintanasa/brgvos-void-repository)  
+  [repository](https://github.com/florintanasa/brgvos-void-repository)
 
-- Cereus Linux - (custom [repos](https://codeberg.org/cereus-linux/cereus-pkgs)) Distrbution focused on give an user-friendly experience  
+- Cereus Linux - (custom repo) Distrbution focused on give an user-friendly experience  
   `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core/i686`*  
   `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core/x86_64`*  
   `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core/x86_64-musl`*  
@@ -29,18 +29,19 @@
   [Homepage](https://cereus-linux.codeberg.page)  
   [SourceForge](https://sourceforge.net/projects/cereus-linux)  
   [git](https://codeberg.org/cereus-linux)  
+  [templates](https://codeberg.org/cereus-linux/cereus-pkgs)
 
 - d77void - (custom repo) Respin of Void Linux with WindowManagers  
   `https://sourceforge.net/projects/d77void/files/d77void-repo`*  
   WM: Awesome, Bspwm, Dwm, Fluxbox, Herbstluftwm, Hyprland, i3wm, JWM, Labwc, Leftwm, Niri, Openbox, Qtile, River, Sway, Wayfire  
   DE: Cosmic, Lxqt, Xfce  
   [Homepage](https://d77void.sourceforge.io)  
-  [SourceForge](https://sourceforge.net/projects/d77void)  
+  [SourceForge](https://sourceforge.net/projects/d77void)
 
 - GabeeOS - Brings the necessary software to satisfy the daily needs of an end user in a simple and aesthetically pleasing desktop environment  
   DE: i3, Openbox, Qtile  
   [Homepage](https://gabeeoslinux.sourceforge.io)  
-  [SourceForge](https://sourceforge.net/projects/gabeeoslinux)  
+  [SourceForge](https://sourceforge.net/projects/gabeeoslinux)
 
 - KLV-Airedale - Powerhouse in a small package. Based on a FirstRib 'Magic' initrd.gz and Overlayfs for the layering of the read-only system files
   DE: Xfce  
@@ -51,41 +52,42 @@
   DE: Xfce  
   [Homepage](https://lazylinuxos.github.io)  
   [SourceForge](https://sourceforge.net/projects/lazylinux)  
-  [git](https://github.com/lazylinuxos)  
+  [git](https://github.com/lazylinuxos)
 
 - NekoVoid - Void Linux's stability and minimalism with modern desktop functionality. Ships with a custom Kasha installer, and X.Org or Xlibre display servers  
   DE: Mate  
   [homepage](https://neko-void.sourceforge.io)  
-  [git](https://codeberg.org/javiercplus/Neko-Void)  
+  [git](https://codeberg.org/javiercplus/Neko-Void)
 
-- Noid Linux - (custom [repo](https://git.ch-naseem.com/noid-linux/xbps-repo)) Naz's personal customization of Void Linux  
+- Noid Linux - (custom repo) Naz's personal customization of Void Linux  
   `https://github.com/noid-linux/xbps-repo/releases/latest/download`*  
   DE: Xfce  
   [SourceForge](https://sourceforge.net/projects/noid-linux)  
   [git](https://git.ch-naseem.com/noid-linux)  
+  [templates](https://git.ch-naseem.com/noid-linux/xbps-repo)
 
 - Obsidian OS - Enjoy the power and flexibility of Arch, Gentoo, or even Void, with the power of A/B Partitioning  
   DE: - (Void edition)  
   [Homepage](https://obsidianos.xyz)  
-  [git](https://github.com/Obsidian-OS)  
+  [git](https://github.com/Obsidian-OS)
 
 - T4N-OS - Minimal Void Linux Experience  
   [homepage](https://t4n-labs.github.io/t4n-os)  
   [git](https://github.com/T4n-Labs)  
   [vur](https://t4n-labs.github.io/vur-web/#home)  
-  [source repo](https://github.com/T4n-Labs/vur)  
+  [templates](https://github.com/T4n-Labs/vur)
 
 - VoidPup - Version of Puppy Linux built using Void Linux packages  
   DE: Jwm  
   [Forum](https://forum.puppylinux.com/viewforum.php?f=180)  
   [SourceForge](https://sourceforge.net/projects/vpup)  
-  [git](https://gitlab.com/djsumdog/voidup)  
+  [git](https://gitlab.com/djsumdog/voidup)
 
-- Vostock Linux - Hand-tuned kernel — delivering raw performance where it matters, with everything configured and ready to run out of the box
+- Vostock Linux - (custom repo) Hand-tuned kernel — delivering raw performance where it matters, with everything configured and ready to run out of the box
   DE: Kde  
-  `https://repo.vostoklinux.org/current/`*  
-  [homepage](https://vostoklinux.org/)  
-  [source repo](https://github.com/vostoklinux/vostok-packages)
+  `https://repo.vostoklinux.org/current`*  
+  [homepage](https://vostoklinux.org)  
+  [templates](https://github.com/vostoklinux/vostok-packages)
   
 ### In development
 
@@ -93,37 +95,35 @@
   [GitHub](https://github.com/TheCodeVerseHub/EclipseLinux/releases/tag/v0.1-alpha)  
   [ISO Alpha 0.1.0](https://github.com/TheCodeVerseHub/EclipseLinux/releases/download/v0.1-alpha/eclipse-linux-0.1.0.iso)
 
-- odyssey Linux (Chapter I) - BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
+- odyssey Linux (Chapter I) - (custom repo) BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
   `https://repo.odysseylinux.org/odyssey-repo/x86_64`*  
   DE: Kde, Xfce, Niri, Hyprland, Mango, Labwc  
-  [homepage](https://forum.odysseylinux.org/)  
-  [Git](https://code.odysseylinux.org/)  
+  [homepage](https://forum.odysseylinux.org)  
+  [Git + templates](https://code.odysseylinux.org)  
   [Forum](https://argonauts.odysseylinux.org/forum.php)  
-  ISO:  
-  [direct-link](https://odysseylinux.org/download.php)  
-  or  
-  [msgnet-link](https://dl.odysseylinux.org/odyssey-launch-edition-chapter-I-x86_64.iso.torrent)  
+  ISO: [direct](https://odysseylinux.org/download.php) or [torrent](https://dl.odysseylinux.org/odyssey-launch-edition-chapter-I-x86_64.iso.torrent)
 
-- PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world/)  
+- PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world)  
   DE: Xfce  
-  [ISOs](https://peppermintos.org/PepVoid/)
+  [ISOs](https://peppermintos.org/PepVoid)
 
 ### Dormant spins?
 
 - voidJW OS - [SF](https://sourceforge.net/projects/voidjw)  
-- VX Linux - [git](https://gitlab.com/dessington/vx-linux)
+- VX Linux - [git](https://gitlab.com/dessington/vx-linux)  
 - langitketujuh OS - The right choices for designer and desktop users  
   DE: Kde  
   [Homepage](https://langitketujuh.id)  
   [git](https://gitlab.com/langitketujuh)  
-  ISOs: Not available??  
-- Split Linux - (custom [repo](https://gitlab.com/splitlinux/split-packages)) Optimized for safely navigating hostile environments like the Internet and physical check points  
+  ISOs: Not available anymore??  
+- Split Linux - (custom repo) Optimized for safely navigating hostile environments like the Internet and physical check points  
   `https://gitlab.com/splitlinux/split-packages/-/raw/master/binpkgs/aarch64-repodata`*  
   DE: Beast (custom dwm) in repo  
   [Homepage](https://splitlinux.org)  
   [git](https://gitlab.com/kevcrumb/split-mklive)  
+  [templates](https://gitlab.com/splitlinux/split-packages)
 
-# *Custom repository `vur` could be added to Void Linux  
+# *Any custom repository could be added to Void Linux (Pick your poison!)  
  (`/etc/xbps.d` should be created first `sudo mkdir -p /etc/xbps.d`)  
  As root run `echo 'repository=[link]' > /etc/xbps.d/[name].conf`  
  [link] is in `code` under distributions which provides custom repo  
