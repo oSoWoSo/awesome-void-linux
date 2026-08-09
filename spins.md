@@ -19,12 +19,12 @@
   [repository](https://github.com/florintanasa/brgvos-void-repository)  
 
 - Cereus Linux - (custom [repos](https://codeberg.org/cereus-linux/cereus-pkgs)) Distrbution focused on give an user-friendly experience  
-  `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core/i686`*
-  `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core/x86_64`*
-  `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core/x86_64-musl`*
-  `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-extra/i686`*
-  `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-extra/x86_64`*
-  `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-extra/x86_64-musl`*
+  `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core/i686`*  
+  `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core/x86_64`*  
+  `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core/x86_64-musl`*  
+  `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-extra/i686`*  
+  `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-extra/x86_64`*  
+  `https://sourceforge.net/projects/cereus-linux/files/repos/cereus-extra/x86_64-musl`*  
   DE: Lxqt, Xfce  
   [Homepage](https://cereus-linux.codeberg.page)  
   [SourceForge](https://sourceforge.net/projects/cereus-linux)  
