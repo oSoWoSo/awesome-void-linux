@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - '*.md'
+      - '*.opml'
+      - 'create-web'
       - 'docs/*'
       - .github/workflows/website.yml
   workflow_dispatch:
