@@ -71,6 +71,13 @@
   [Homepage](https://obsidianos.xyz)  
   [git](https://github.com/Obsidian-OS)
 
+- Split Linux - (custom repo) Optimized for safely navigating hostile environments like the Internet and physical check points  
+  `https://gitlab.com/splitlinux/split-packages/-/raw/master/binpkgs/aarch64-repodata`*  
+  DE: Beast (custom dwm) in repo  
+  [Homepage](https://splitlinux.org)  
+  [git](https://gitlab.com/kevcrumb/split-mklive)  
+  [templates](https://gitlab.com/splitlinux/split-packages)
+
 - T4N-OS - Minimal Void Linux Experience  
   [homepage](https://t4n-labs.github.io/t4n-os)  
   [git](https://github.com/T4n-Labs)  
@@ -88,14 +95,14 @@
   `https://repo.vostoklinux.org/current`*  
   [homepage](https://vostoklinux.org)  
   [templates](https://github.com/vostoklinux/vostok-packages)
-  
+
 ### In development
 
 - Eclipse Linux - Experimental Void Linux (musl) based distribution that boots with the [dynamod](https://github.com/sinisterMage/dynamod) init system (x86_64--musl only)  
   [GitHub](https://github.com/TheCodeVerseHub/EclipseLinux/releases/tag/v0.1-alpha)  
   [ISO Alpha 0.1.0](https://github.com/TheCodeVerseHub/EclipseLinux/releases/download/v0.1-alpha/eclipse-linux-0.1.0.iso)
 
-- odyssey Linux (Chapter I) - (custom repo) BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
+- Odyssey Linux - (custom repo) BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
   `https://repo.odysseylinux.org/odyssey-repo/x86_64`*  
   DE: Kde, Xfce, Niri, Hyprland, Mango, Labwc  
   [homepage](https://forum.odysseylinux.org)  
@@ -116,12 +123,6 @@
   [Homepage](https://langitketujuh.id)  
   [git](https://gitlab.com/langitketujuh)  
   ISOs: Not available anymore??  
-- Split Linux - (custom repo) Optimized for safely navigating hostile environments like the Internet and physical check points  
-  `https://gitlab.com/splitlinux/split-packages/-/raw/master/binpkgs/aarch64-repodata`*  
-  DE: Beast (custom dwm) in repo  
-  [Homepage](https://splitlinux.org)  
-  [git](https://gitlab.com/kevcrumb/split-mklive)  
-  [templates](https://gitlab.com/splitlinux/split-packages)
 
 # *Any custom repository could be added to Void Linux (Pick your poison!)  
  (`/etc/xbps.d` should be created first `sudo mkdir -p /etc/xbps.d`)  
