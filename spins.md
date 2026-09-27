@@ -38,6 +38,10 @@
   [Homepage](https://d77void.sourceforge.io)  
   [SourceForge](https://sourceforge.net/projects/d77void)
 
+- Eclipse Linux - Experimental Void Linux (musl) based distribution that boots with the [dynamod](https://github.com/sinisterMage/dynamod) init system (x86_64--musl only)  
+  [GitHub](https://github.com/TheCodeVerseHub/EclipseLinux/releases/tag/v0.1-alpha)  
+  [ISO Alpha 0.1.0](https://github.com/TheCodeVerseHub/EclipseLinux/releases/download/v0.1-alpha/eclipse-linux-0.1.0.iso)
+
 - GabeeOS - Brings the necessary software to satisfy the daily needs of an end user in a simple and aesthetically pleasing desktop environment  
   DE: i3, Openbox, Qtile  
   [Homepage](https://gabeeoslinux.sourceforge.io)  
@@ -71,6 +75,18 @@
   [Homepage](https://obsidianos.xyz)  
   [git](https://github.com/Obsidian-OS)
 
+- Odyssey Linux - (custom repo) BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
+  `https://repo.odysseylinux.org/odyssey-repo/x86_64`*  
+  DE: Kde, Xfce, Niri, Hyprland, Mango, Labwc  
+  [homepage](https://forum.odysseylinux.org)  
+  [Git + templates](https://code.odysseylinux.org)  
+  [Forum](https://argonauts.odysseylinux.org/forum.php)  
+  ISO: [direct](https://odysseylinux.org/download.php) or [torrent](https://dl.odysseylinux.org/odyssey-launch-edition-chapter-I-x86_64.iso.torrent)
+
+- PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world)  
+  DE: Xfce  
+  [ISOs](https://peppermintos.org/PepVoid)
+
 - Split Linux - (custom repo) Optimized for safely navigating hostile environments like the Internet and physical check points  
   `https://gitlab.com/splitlinux/split-packages/-/raw/master/binpkgs/aarch64-repodata`*  
   DE: Beast (custom dwm) in repo  
@@ -95,24 +111,6 @@
   `https://repo.vostoklinux.org/current`*  
   [homepage](https://vostoklinux.org)  
   [templates](https://github.com/vostoklinux/vostok-packages)
-
-### In development
-
-- Eclipse Linux - Experimental Void Linux (musl) based distribution that boots with the [dynamod](https://github.com/sinisterMage/dynamod) init system (x86_64--musl only)  
-  [GitHub](https://github.com/TheCodeVerseHub/EclipseLinux/releases/tag/v0.1-alpha)  
-  [ISO Alpha 0.1.0](https://github.com/TheCodeVerseHub/EclipseLinux/releases/download/v0.1-alpha/eclipse-linux-0.1.0.iso)
-
-- Odyssey Linux - (custom repo) BORE scheduling, xbps-gui, runit-gui, Control Center, Calamares installer, No bloat  
-  `https://repo.odysseylinux.org/odyssey-repo/x86_64`*  
-  DE: Kde, Xfce, Niri, Hyprland, Mango, Labwc  
-  [homepage](https://forum.odysseylinux.org)  
-  [Git + templates](https://code.odysseylinux.org)  
-  [Forum](https://argonauts.odysseylinux.org/forum.php)  
-  ISO: [direct](https://odysseylinux.org/download.php) or [torrent](https://dl.odysseylinux.org/odyssey-launch-edition-chapter-I-x86_64.iso.torrent)
-
-- PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world)  
-  DE: Xfce  
-  [ISOs](https://peppermintos.org/PepVoid)
 
 ### Dormant spins?
 
