@@ -253,6 +253,59 @@ add_validation() {
 </p>
 ' >> "$output"
 }
+# Append an "RSS feeds" section (generated from feeds.opml) to a built page
+_add_feeds_section() {
+	local output="$1"
+	[ -f feeds.opml ] || return 0
+	[ -f "$output" ] || return 0
+
+	python3 - "$output" <<'PYEOF'
+import html
+import sys
+import xml.etree.ElementTree as ET
+
+output = sys.argv[1]
+
+try:
+    tree = ET.parse("feeds.opml")
+except (ET.ParseError, OSError):
+    sys.exit(1)
+
+feeds = []
+for outline in tree.getroot().iter("outline"):
+    title = (outline.get("title") or "").strip()
+    xml_url = (outline.get("xmlUrl") or "").strip()
+    if not (title and xml_url):
+        continue
+    feeds.append((title, xml_url))
+
+if not feeds:
+    sys.exit(0)
+
+rows = "\n".join(
+    f'    <li><a href="{html.escape(url, quote=True)}">{html.escape(title)}</a></li>'
+    for title, url in feeds
+)
+
+fragment = (
+    '<section id="rss-feeds">\n'
+    '  <h2>RSS feeds</h2>\n'
+    '  <p>Subscribe to <a href="feeds.opml">feeds.opml</a> (OPML) or to an '
+    "individual spin's feed below:</p>\n"
+    '  <ul>\n'
+    + rows
+    + '\n  </ul>\n'
+    '</section>\n'
+)
+
+with open(output, encoding="utf-8") as f:
+    content = f.read()
+if "</body>" in content:
+    content = content.replace("</body>", fragment + "</body>", 1)
+    with open(output, "w", encoding="utf-8") as f:
+        f.write(content)
+PYEOF
+}
 
 # Build nav snippet for a given page with active class
 # Injects: oSoWoSo | Home | [Download Release] [Download ZIP] [Source] | other pages...
@@ -318,6 +371,7 @@ target_build() { ## Builds the website, optional: title argument
 	rm -rf docs && mkdir -p docs
 	cp -r src/* docs/
 	rm -f docs/toggle.html docs/toc.html docs/svg-color.html
+	[ -f feeds.opml ] && cp feeds.opml docs/feeds.opml
 
 	if [ "$count" = 1 ]; then
 		for file in *.md; do
@@ -373,6 +427,7 @@ target_build() { ## Builds the website, optional: title argument
 	else
 		_re "ERROR: No .md files found!"
 	fi
+	_add_feeds_section docs/spins.html
 	_g "Finished"
 }
 
