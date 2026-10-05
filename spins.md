@@ -47,10 +47,15 @@
   [Homepage](https://gabeeoslinux.sourceforge.io)  
   [SourceForge](https://sourceforge.net/projects/gabeeoslinux)
 
-- KLV-Airedale - Powerhouse in a small package. Based on a FirstRib 'Magic' initrd.gz and Overlayfs for the layering of the read-only system files
+- KLV-Airedale - Powerhouse in a small package. Based on a FirstRib 'Magic' initrd.gz and Overlayfs for the layering of the read-only system files  
   DE: Xfce  
   [Homepage](https://klv-airedale.rockedge.org)  
   [SourceForge](https://sourceforge.net/projects/klv-airedale)
+
+- KLV-Spectr - spectrwm aimed at people who already know they'd rather tile than drag  
+  DE: spectrwm  
+  [Homepage](https://klv-spectr.rockedge.org)  
+  [SourceForge](https://sourceforge.net/projects/klv-spectr)
 
 - LazyLinux - Pre-configured distro with a large number of software preinstalled for almost any purpose  
   DE: Xfce  
