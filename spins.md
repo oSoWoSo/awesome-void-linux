@@ -63,6 +63,11 @@
   [SourceForge](https://sourceforge.net/projects/lazylinux)  
   [git](https://github.com/lazylinuxos)
 
+- LyargoOS - Opinionated Void Linux-based distribution with preconfigured desktop, curated applications, and Calamares graphical installer  
+  DE: Gnome, Plasma, Xfce  
+  [homepage](https://hotodogo.com/lyargoos)  
+  [SourceForge](https://sourceforge.net/projects/lyargoos)
+
 - NekoVoid - Void Linux's stability and minimalism with modern desktop functionality. Ships with a custom Kasha installer, and X.Org or Xlibre display servers  
   DE: Mate  
   [homepage](https://neko-void.sourceforge.io)  
