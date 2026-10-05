@@ -92,6 +92,11 @@
   DE: Xfce  
   [ISOs](https://peppermintos.org/PepVoid)
 
+- ShrikeVLinux - Void Based distribution featuring XFCE as the default desktop  
+  DE: Xfce  
+  [homepage](https://shrikelinuxug.org)  
+  [ISOs](https://sourceforge.net/projects/shrikelinux/files/ShrikeV%20-%20Void%20Based%20Distro)
+
 - Split Linux - (custom repo) Optimized for safely navigating hostile environments like the Internet and physical check points  
   `https://gitlab.com/splitlinux/split-packages/-/raw/master/binpkgs/aarch64-repodata`*  
   DE: Beast (custom dwm) in repo  
