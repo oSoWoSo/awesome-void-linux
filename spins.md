@@ -86,7 +86,7 @@
   [homepage](https://forum.odysseylinux.org)  
   [Git + templates](https://code.odysseylinux.org)  
   [Forum](https://argonauts.odysseylinux.org/forum.php)  
-  ISO: [direct](https://odysseylinux.org/download.php) or [torrent](https://dl.odysseylinux.org/odyssey-launch-edition-chapter-I-x86_64.iso.torrent)
+  ISO: [Launch Edition](https://odysseylinux.org/launch.html) or [Shipwreck](https://odysseylinux.org/shipwreck.html)
 
 - PepVoid by PeppermintOS - [blog post](https://peppermintos.com/2026/03/where-are-we-for-2026-in-peppermintos-world)  
   DE: Xfce  
