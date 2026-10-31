@@ -5,6 +5,9 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,13 +20,13 @@ jobs:
 
       - name: Update submodules
         run: |
-          git config --file .gitmodules --get-regexp branch | while read -r line; do
-            submodule=$(echo $line | awk '{print $1}' | sed 's/branch.//'| cut -d'.' -f2)
-            branch=$(echo $line | awk '{print $2}')
-            echo "Updating submodule $submodule to branch $branch"
-            cd $submodule
-            git checkout $branch
-            git pull origin $branch
+          git config --file .gitmodules --get-regexp 'submodule\..*\.branch' | while read -r key value; do
+            path="${key#submodule.}"
+            path="${path%.branch}"
+            echo "Updating $path → $value"
+            cd "$path"
+            git checkout "$value"
+            git pull origin "$value"
             cd ..
           done
 
@@ -31,8 +34,6 @@ jobs:
         run: |
           git config user.name "oSoWoSo[bot]"
           git config user.email "mail@osowoso.org"
-          #git submodule sync --quiet --recursive
-          #git submodule update --init --recursive
           git add --all
           git commit -m "sync" || echo "No changes to commit"
-          git push
+          git push origin HEAD
