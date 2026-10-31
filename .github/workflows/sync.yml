@@ -1,5 +1,4 @@
 name: Update submodules
-
 on:
   push:
     paths:
@@ -12,29 +11,26 @@ permissions:
 concurrency:
   group: submodule
   cancel-in-progress: true
-  
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           submodules: recursive
-
       - name: Update submodules
         run: |
           git config --file .gitmodules --get-regexp 'submodule\..*\.branch' | while read -r key value; do
-            path="${key#submodule.}"
-            path="${path%.branch}"
+            name="${key#submodule.}"
+            name="${name%.branch}"
+            path=$(git config --file .gitmodules --get "submodule.${name}.path")
             echo "Updating $path → $value"
             cd "$path"
             git checkout "$value"
             git pull origin "$value"
             cd ..
           done
-
       - name: Push
         run: |
           git config user.name "oSoWoSo[bot]"
