@@ -16,6 +16,7 @@
 - BRGV-OS - Aims to facilitate developers, researchers and users to transitioning from Windows® or macOS® to Linux® by maintaining familiar operational habits and workflows.  
   DE:  
   [homepage](https://github.com/florintanasa/brgvos-void)  
+  `https://repository.brgv-os.ro/x86_64-current`*  
   [repository](https://github.com/florintanasa/brgvos-void-repository)
 
 - Cereus Linux - (custom repo) Distrbution focused on give an user-friendly experience  
@@ -33,6 +34,7 @@
 
 - d77void - (custom repo) Respin of Void Linux with WindowManagers  
   `https://sourceforge.net/projects/d77void/files/d77void-repo`*  
+  `https://sourceforge.net/projects/d77void/files/d77void-musl`*  
   WM: Awesome, Bspwm, Dwm, Fluxbox, Herbstluftwm, Hyprland, i3wm, JWM, Labwc, Leftwm, Niri, Openbox, Qtile, River, Sway, Wayfire  
   DE: Cosmic, Lxqt, Xfce  
   [Homepage](https://d77void.sourceforge.io)  
@@ -59,6 +61,7 @@
 
 - LazyLinux - Pre-configured distro with a large number of software preinstalled for almost any purpose  
   DE: Xfce  
+  `https://github.com/lazylinuxos/lazy-repo/releases/latest/download`*  
   [Homepage](https://lazylinuxos.github.io)  
   [SourceForge](https://sourceforge.net/projects/lazylinux)  
   [git](https://github.com/lazylinuxos)
@@ -103,7 +106,7 @@
   [ISOs](https://sourceforge.net/projects/shrikelinux/files/ShrikeV%20-%20Void%20Based%20Distro)
 
 - Split Linux - (custom repo) Optimized for safely navigating hostile environments like the Internet and physical check points  
-  `https://gitlab.com/splitlinux/split-packages/-/raw/master/binpkgs/aarch64-repodata`*  
+  `https://gitlab.com/splitlinux/split-packages/-/raw/master/binpkgs`*  
   DE: Beast (custom dwm) in repo  
   [Homepage](https://splitlinux.org)  
   [git](https://gitlab.com/kevcrumb/split-mklive)  
