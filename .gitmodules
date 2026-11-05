@@ -49,10 +49,12 @@
 [submodule "oco"]
 	path = oco
 	url = https://github.com/oSoWoSo/oco
-	branch = master
+	branch = OCO
 [submodule "void-docs"]
 	path = void-docs
 	url = https://github.com/void-linux/void-docs
+	branch = master
 [submodule "pepvoid-builder"]
-    path = pepvoid-builder
-    url = https://codeberg.org/Peppermint_OS/pepvoid-builder
+	path = pepvoid-builder
+	url = https://codeberg.org/Peppermint_OS/pepvoid-builder
+	branch = main
