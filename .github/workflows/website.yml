@@ -62,8 +62,9 @@ jobs:
             exit 0
           fi
 
-          git commit --amend --no-edit
-          git push --force-with-lease origin HEAD
+          # Plain commit (not --amend): keeps the author's history intact.
+          git commit -m "Update generated pages [skip ci]"
+          git push origin HEAD
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
