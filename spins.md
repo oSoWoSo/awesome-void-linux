@@ -127,6 +127,10 @@
   [homepage](https://vostoklinux.org)  
   [templates](https://github.com/vostoklinux/vostok-packages)
 
+- Vyrm Linux - Lightweight, modern Linux distribution based on Void Linux, featuring the SonicDE desktop environment and the XLibre display server
+  DE: SonicDE  
+  [SourceForge](https://sourceforge.net/projects/vyrm-linux)
+
 ### Dormant spins?
 
 - voidJW OS - [SF](https://sourceforge.net/projects/voidjw)  
