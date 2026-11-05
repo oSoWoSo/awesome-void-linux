@@ -98,6 +98,15 @@ To add one: create `/etc/xbps.d/<name>.conf` with `repository=<URL>`.
 - Repository:
   - `x86_64`: `https://github.com/noid-linux/xbps-repo/releases/latest/download`
 
+## oco - OCO repository
+- Arches: `x86_64* aarch64*`
+- Homepage: https://repo.osowoso.org
+- Repository:
+  - `x86_64`: `https://repo.osowoso.org/x86_64`
+  - `x86_64-musl`: `https://repo.osowoso.org/x86_64-musl`
+  - `aarch64`: `https://repo.osowoso.org/aarch64`
+  - `aarch64-musl`: `https://repo.osowoso.org/aarch64-musl`
+
 ## oco-testing - OCO testing repository
 - Arches: `x86_64* aarch64*`
 - Homepage: https://repo.osowoso.org/testing.html
