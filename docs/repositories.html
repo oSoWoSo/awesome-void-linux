@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>repositories</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+<script>
+  function toggleTheme(){
+    const html=document.documentElement;
+    const current=html.getAttribute("data-theme")||"dark";
+    const next=current==="dark"?"light":"dark";
+    html.setAttribute("data-theme",next);
+    localStorage.setItem("theme",next)
+  }
+  (function(){
+    const saved=localStorage.getItem("theme")||"dark";
+    document.documentElement.setAttribute("data-theme",saved)
+  })();
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toc = document.getElementById("TOC");
+    if (!toc) return;
+
+    // Add toc-title with toggle button
+    const titleEl = document.createElement("div");
+    titleEl.id = "toc-title";
+    titleEl.innerHTML = '<span>Contents</span><span id="toc-toggle-icon">◀</span>';
+    toc.insertBefore(titleEl, toc.firstChild);
+
+    // Wrap TOC + the rest of the content in .page-wrapper
+    const body = document.body;
+    const wrapper = document.createElement("div");
+    wrapper.className = "page-wrapper";
+
+    // Find all elements after <nav> (main nav menu)
+    const topNav = document.querySelector("body > nav");
+    const siblings = [];
+    let el = topNav ? topNav.nextElementSibling : body.firstElementChild;
+    while (el) {
+      siblings.push(el);
+      el = el.nextElementSibling;
+    }
+
+    siblings.forEach((s) => wrapper.appendChild(s));
+    body.appendChild(wrapper);
+
+    // Wrap main content (everything except TOC) in .main-content
+    const mainContent = document.createElement("div");
+    mainContent.className = "main-content";
+    Array.from(wrapper.children).forEach((child) => {
+      if (child.id !== "TOC") mainContent.appendChild(child);
+    });
+    wrapper.appendChild(mainContent);
+
+    // Collapsible toggle
+    const icon = document.getElementById("toc-toggle-icon");
+    const saved = localStorage.getItem("toc-collapsed");
+    if (saved === "true") {
+      toc.classList.add("collapsed");
+      icon.textContent = "▶";
+    }
+
+    titleEl.addEventListener("click", function () {
+      toc.classList.toggle("collapsed");
+      const isCollapsed = toc.classList.contains("collapsed");
+      icon.textContent = isCollapsed ? "▶" : "◀";
+      localStorage.setItem("toc-collapsed", isCollapsed);
+    });
+  });
+</script>
+<nav><ul>
+  <li><a href="https://osowoso.org">oSoWoSo</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a class="no-release" href="https://github.com/oSoWoSo/awesome-void-linux/releases/latest">⏬ release</a></li>
+  <li><a href="https://github.com/oSoWoSo/awesome-void-linux/archive/refs/heads/main.zip">📦repo zip</a></li>
+  <li><a href="https://github.com/oSoWoSo/awesome-void-linux">🔗git</a></li>
+  <li>⏭️</a></li>
+  <li><a href="documentation.html">documentation</a></li>
+  <li><a href="guides.html">guides</a></li>
+  <li><a href="repositories.html" class="active">repositories</a></li>
+  <li><a href="resources.html">resources</a></li>
+  <li><a href="spins.html">spins</a></li>
+  <li><a href="videos.html">videos</a></li>
+</ul></nav>
+<header id="title-block-header">
+<h1 class="title">repositories</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#custom-repositories-from-oco-crc-templates"
+id="toc-custom-repositories-from-oco-crc-templates">Custom repositories
+(from oco CRC templates)</a>
+<ul>
+<li><a href="#black-hole---blackhole-repository"
+id="toc-black-hole---blackhole-repository">black-hole - blackhole
+repository</a></li>
+<li><a href="#brgvos---brgv-os-repository"
+id="toc-brgvos---brgv-os-repository">brgvos - BRGV-OS
+repository</a></li>
+<li><a href="#brgvos-testing---brgv-os-repository"
+id="toc-brgvos-testing---brgv-os-repository">brgvos-testing - BRGV-OS
+repository</a></li>
+<li><a href="#cereus-core---cereus-linux-core-repository"
+id="toc-cereus-core---cereus-linux-core-repository">cereus-core - Cereus
+Linux Core repository</a></li>
+<li><a href="#cereus-extra---cereus-linux-extra-repository"
+id="toc-cereus-extra---cereus-linux-extra-repository">cereus-extra -
+Cereus Linux Extra repository</a></li>
+<li><a href="#cosmic---cosmic-sys109-repository-by-bella109"
+id="toc-cosmic---cosmic-sys109-repository-by-bella109">cosmic - Cosmic
+sys109 repository by Bella109</a></li>
+<li><a href="#d77void---d77-void-repository"
+id="toc-d77void---d77-void-repository">d77void - d77 Void
+repository</a></li>
+<li><a href="#dms---dux-shell-by-duxlabs"
+id="toc-dms---dux-shell-by-duxlabs">dms - dux shell by duxlabs</a></li>
+<li><a href="#dux---dux-apps-by-duxlabs"
+id="toc-dux---dux-apps-by-duxlabs">dux - dux apps by duxlabs</a></li>
+<li><a href="#hyprland---hyprland-repository-by-sofijacom"
+id="toc-hyprland---hyprland-repository-by-sofijacom">hyprland - Hyprland
+repository by sofijacom</a></li>
+<li><a href="#jake---jakeatlinux-jpedmediacom-repository"
+id="toc-jake---jakeatlinux-jpedmediacom-repository">jake - JakeAtLinux
+(jpedmedia.com) repository</a></li>
+<li><a href="#lazy---lazylinux-repository"
+id="toc-lazy---lazylinux-repository">lazy - LazyLinux
+repository</a></li>
+<li><a href="#librewolf---librewolf-repository-by-index-0"
+id="toc-librewolf---librewolf-repository-by-index-0">librewolf -
+Librewolf repository by index-0</a></li>
+<li><a href="#noid---noid-linux-repository"
+id="toc-noid---noid-linux-repository">noid - Noid Linux
+repository</a></li>
+<li><a href="#oco---oco-repository" id="toc-oco---oco-repository">oco -
+OCO repository</a></li>
+<li><a href="#oco-testing---oco-testing-repository"
+id="toc-oco-testing---oco-testing-repository">oco-testing - OCO testing
+repository</a></li>
+<li><a href="#odyssey---odyssey-linux-repository"
+id="toc-odyssey---odyssey-linux-repository">odyssey - Odyssey Linux
+repository</a></li>
+<li><a href="#sofijacom---sofijacom-repository"
+id="toc-sofijacom---sofijacom-repository">sofijacom - Sofijacom
+repository</a></li>
+<li><a href="#sonicde---sonicde-repository-by-nerdyslacker"
+id="toc-sonicde---sonicde-repository-by-nerdyslacker">sonicde - SonicDE
+repository by nerdyslacker</a></li>
+<li><a href="#split---split-linux-repository"
+id="toc-split---split-linux-repository">split - Split Linux
+repository</a></li>
+<li><a href="#voiders---voiders-repository"
+id="toc-voiders---voiders-repository">voiders - Voiders
+repository</a></li>
+<li><a href="#vostock---vostock-linux-repository"
+id="toc-vostock---vostock-linux-repository">vostock - Vostock Linux
+repository</a></li>
+<li><a href="#xlibre---xlibre-repository-by-sofijacom"
+id="toc-xlibre---xlibre-repository-by-sofijacom">xlibre - Xlibre
+repository by sofijacom</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="custom-repositories-from-oco-crc-templates">Custom repositories
+(from oco CRC templates)</h1>
+<p>Community repositories collected via
+<code>Community-Repositories-Collection</code> (CRC) metapackage.</p>
+<p>To add one: create <code>/etc/xbps.d/&lt;name&gt;.conf</code> with
+<code>repository=&lt;URL&gt;</code>.</p>
+<h2 id="black-hole---blackhole-repository">black-hole - blackhole
+repository</h2>
+<ul>
+<li>Arches: <code>x86_64*</code></li>
+<li>Homepage: <a
+href="https://github.com/Event-Horizon-VL/blackhole-vl">https://github.com/Event-Horizon-VL/blackhole-vl</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://mirror.black-hole.dev/x86_64</code></li>
+<li><code>x86_64-musl</code>:
+<code>https://mirror.black-hole.dev/x86_64-musl</code></li>
+</ul></li>
+</ul>
+<h2 id="brgvos---brgv-os-repository">brgvos - BRGV-OS repository</h2>
+<ul>
+<li>Arches: <code>x86_64</code></li>
+<li>Homepage: <a
+href="https://github.com/florintanasa/void-packages-brgvos">https://github.com/florintanasa/void-packages-brgvos</a></li>
+<li>Repository:
+<ul>
+<li><code>https://repository.brgv-os.ro/x86_64-current</code></li>
+</ul></li>
+</ul>
+<h2 id="brgvos-testing---brgv-os-repository">brgvos-testing - BRGV-OS
+repository</h2>
+<ul>
+<li>Arches: <code>x86_64</code></li>
+<li>Homepage: <a
+href="https://github.com/florintanasa/void-packages-brgvos">https://github.com/florintanasa/void-packages-brgvos</a></li>
+<li>Repository:
+<ul>
+<li><code>https://repository.brgv-os.ro/repository-test/</code></li>
+</ul></li>
+</ul>
+<h2 id="cereus-core---cereus-linux-core-repository">cereus-core - Cereus
+Linux Core repository</h2>
+<ul>
+<li>Arches: <code>x86_64* i686</code></li>
+<li>Homepage: <a
+href="https://codeberg.org/cereus-linux/cereus-pkgs">https://codeberg.org/cereus-linux/cereus-pkgs</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core/x86_64</code></li>
+<li><code>x86_64-musl</code>:
+<code>https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core/x86_64-musl</code></li>
+<li><code>i686</code>:
+<code>https://sourceforge.net/projects/cereus-linux/files/repos/cereus-core/i686</code></li>
+</ul></li>
+</ul>
+<h2 id="cereus-extra---cereus-linux-extra-repository">cereus-extra -
+Cereus Linux Extra repository</h2>
+<ul>
+<li>Arches: <code>x86_64* i686</code></li>
+<li>Homepage: <a
+href="https://codeberg.org/cereus-linux/cereus-pkgs">https://codeberg.org/cereus-linux/cereus-pkgs</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://sourceforge.net/projects/cereus-linux/files/repos/cereus-extra/x86_64</code></li>
+<li><code>x86_64-musl</code>:
+<code>https://sourceforge.net/projects/cereus-linux/files/repos/cereus-extra/x86_64-musl</code></li>
+<li><code>i686</code>:
+<code>https://sourceforge.net/projects/cereus-linux/files/repos/cereus-extra/i686</code></li>
+</ul></li>
+</ul>
+<h2 id="cosmic---cosmic-sys109-repository-by-bella109">cosmic - Cosmic
+sys109 repository by Bella109</h2>
+<ul>
+<li>Arches: <code>x86_64*</code></li>
+<li>Homepage: <a
+href="https://codeberg.org/Bella109/void-packages">https://codeberg.org/Bella109/void-packages</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://repo.sys109.de/repo/x86_64</code></li>
+<li><code>x86_64-musl</code>:
+<code>https://repo.sys109.de/repo/x86_64-musl</code></li>
+</ul></li>
+</ul>
+<h2 id="d77void---d77-void-repository">d77void - d77 Void
+repository</h2>
+<ul>
+<li>Arches: <code>x86_64*</code></li>
+<li>Homepage: <a
+href="https://github.com/d77void/srcpkgs-d77">https://github.com/d77void/srcpkgs-d77</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://sourceforge.net/projects/d77void/files/d77void-repo</code></li>
+<li><code>x86_64-musl</code>:
+<code>https://sourceforge.net/projects/d77void/files/d77void-musl</code></li>
+</ul></li>
+</ul>
+<h2 id="dms---dux-shell-by-duxlabs">dms - dux shell by duxlabs</h2>
+<ul>
+<li>Arches: <code>x86_64*</code></li>
+<li>Homepage: <a href="https://duxlabs.dev">https://duxlabs.dev</a></li>
+<li>Repository:
+<ul>
+<li><code>https://void.danklinux.com/dms/current</code></li>
+</ul></li>
+</ul>
+<h2 id="dux---dux-apps-by-duxlabs">dux - dux apps by duxlabs</h2>
+<ul>
+<li>Arches: <code>x86_64*</code></li>
+<li>Homepage: <a href="https://duxlabs.dev">https://duxlabs.dev</a></li>
+<li>Repository:
+<ul>
+<li><code>https://void.danklinux.com/danklinux/current</code></li>
+</ul></li>
+</ul>
+<h2 id="hyprland---hyprland-repository-by-sofijacom">hyprland - Hyprland
+repository by sofijacom</h2>
+<ul>
+<li>Arches: <code>x86_64* aarch64*</code></li>
+<li>Homepage: <a
+href="https://github.com/sofijacom/hyprland-void">https://github.com/sofijacom/hyprland-void</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://raw.githubusercontent.com/sofijacom/hyprland-void/repository-x86_64-glibc</code></li>
+<li><code>x86_64-musl</code>:
+<code>https://raw.githubusercontent.com/sofijacom/hyprland-void/repository-x86_64-musl</code></li>
+<li><code>aarch64</code>:
+<code>https://raw.githubusercontent.com/sofijacom/hyprland-void/repository-aarch64-glibc</code></li>
+<li><code>aarch64-musl</code>:
+<code>https://raw.githubusercontent.com/sofijacom/hyprland-void/repository-aarch64-musl</code></li>
+</ul></li>
+</ul>
+<h2 id="jake---jakeatlinux-jpedmediacom-repository">jake - JakeAtLinux
+(jpedmedia.com) repository</h2>
+<ul>
+<li>Arches: <code>x86_64</code></li>
+<li>Homepage: <a
+href="https://codeberg.org/JakeAtLinux/void-repo">https://codeberg.org/JakeAtLinux/void-repo</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://codeberg.org/JakeAtLinux/void-repo/raw/branch/main/x86_64</code></li>
+</ul></li>
+</ul>
+<h2 id="lazy---lazylinux-repository">lazy - LazyLinux repository</h2>
+<ul>
+<li>Arches: <code>x86_64</code></li>
+<li>Homepage: <a
+href="https://github.com/lazylinuxos/lazy-repo">https://github.com/lazylinuxos/lazy-repo</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://github.com/lazylinuxos/lazy-repo/releases/latest/download</code></li>
+</ul></li>
+</ul>
+<h2 id="librewolf---librewolf-repository-by-index-0">librewolf -
+Librewolf repository by index-0</h2>
+<ul>
+<li>Arches: <code>x86_64</code></li>
+<li>Homepage: <a
+href="https://github.com/index-0/librewolf-void">https://github.com/index-0/librewolf-void</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://github.com/index-0/librewolf-void/releases/latest/download</code></li>
+</ul></li>
+</ul>
+<h2 id="noid---noid-linux-repository">noid - Noid Linux repository</h2>
+<ul>
+<li>Arches: <code>x86_64</code></li>
+<li>Homepage: <a
+href="https://github.com/noid-linux/xbps-repo">https://github.com/noid-linux/xbps-repo</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://github.com/noid-linux/xbps-repo/releases/latest/download</code></li>
+</ul></li>
+</ul>
+<h2 id="oco---oco-repository">oco - OCO repository</h2>
+<ul>
+<li>Arches: <code>x86_64* aarch64*</code></li>
+<li>Homepage: <a
+href="https://repo.osowoso.org">https://repo.osowoso.org</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://repo.osowoso.org/x86_64</code></li>
+<li><code>x86_64-musl</code>:
+<code>https://repo.osowoso.org/x86_64-musl</code></li>
+<li><code>aarch64</code>:
+<code>https://repo.osowoso.org/aarch64</code></li>
+<li><code>aarch64-musl</code>:
+<code>https://repo.osowoso.org/aarch64-musl</code></li>
+</ul></li>
+</ul>
+<h2 id="oco-testing---oco-testing-repository">oco-testing - OCO testing
+repository</h2>
+<ul>
+<li>Arches: <code>x86_64* aarch64*</code></li>
+<li>Homepage: <a
+href="https://repo.osowoso.org/testing.html">https://repo.osowoso.org/testing.html</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://repo.osowoso.org/testing/x86_64</code></li>
+<li><code>x86_64-musl</code>:
+<code>https://repo.osowoso.org/testing/x86_64-musl</code></li>
+<li><code>aarch64</code>:
+<code>https://repo.osowoso.org/testing/aarch64</code></li>
+<li><code>aarch64-musl</code>:
+<code>https://repo.osowoso.org/testing/aarch64-musl</code></li>
+</ul></li>
+</ul>
+<h2 id="odyssey---odyssey-linux-repository">odyssey - Odyssey Linux
+repository</h2>
+<ul>
+<li>Arches: <code>x86_64</code></li>
+<li>Homepage: <a
+href="https://code.odysseylinux.org/nobody">https://code.odysseylinux.org/nobody</a></li>
+<li>Repository:
+<ul>
+<li><code>https://repo.odysseylinux.org/odyssey-repo/x86_64</code></li>
+</ul></li>
+</ul>
+<h2 id="sofijacom---sofijacom-repository">sofijacom - Sofijacom
+repository</h2>
+<ul>
+<li>Arches: <code>x86_64</code></li>
+<li>Homepage: <a
+href="https://github.com/sofijacom/void-package">https://github.com/sofijacom/void-package</a></li>
+<li>Repository:
+<ul>
+<li><code>x86_64</code>:
+<code>https://github.com/sofijacom/void-package/releases/latest/download</code></li>
+</ul></li>
+</ul>
+<h2 id="sonicde---sonicde-repository-by-nerdyslacker">sonicde - SonicDE
+repository by nerdyslacker</h2>
+<ul>
+<li>Arches: <code>aarch64* x86_64* i686</code></li>
+<li>Homepage: <a
+href="https://github.com/sonicde-void/sonicde-void">https://github.com/sonicde-void/sonicde-void</a></li>
+<li>Repository:
+<ul>
+<li><code>aarch64</code>:
+<code>https://github.com/sonicde-void/sonicde-void/releases/latest/download</code></li>
+<li><code>aarch64-musl</code>:
+<code>https://github.com/sonicde-void/sonicde-void/releases/latest/download</code></li>
+<li><code>x86_64</code>:
+<code>https://github.com/sonicde-void/sonicde-void/releases/latest/download</code></li>
+<li><code>x86_64-musl</code>:
+<code>https://github.com/sonicde-void/sonicde-void/releases/latest/download</code></li>
+<li><code>i686</code>:
+<code>https://github.com/sonicde-void/sonicde-void/releases/latest/download</code></li>
+</ul></li>
+</ul>
+<h2 id="split---split-linux-repository">split - Split Linux
+repository</h2>
+<ul>
+<li>Arches: <code>aarch64* x86_64*</code></li>
+<li>Homepage: <a
+href="https://gitlab.com/splitlinux/split-packages">https://gitlab.com/splitlinux/split-packages</a></li>
+<li>Repository:
+<ul>
+<li><code>aarch64</code>:
+<code>https://gitlab.com/splitlinux/split-packages/-/raw/master/binpkgs</code></li>
+<li><code>aarch64-musl</code>:
+<code>https://gitlab.com/splitlinux/split-packages/-/raw/master/binpkgs</code></li>
+<li><code>x86_64</code>:
+<code>https://gitlab.com/splitlinux/split-packages/-/raw/master/binpkgs</code></li>
+<li><code>x86_64-musl</code>:
+<code>https://gitlab.com/splitlinux/split-packages/-/raw/master/binpkgs</code></li>
+</ul></li>
+</ul>
+<h2 id="voiders---voiders-repository">voiders - Voiders repository</h2>
+<ul>
+<li>Arches: <code>aarch64* x86_64*</code></li>
+<li>Homepage: <a
+href="https://codeberg.org/voiders-community/repository">https://codeberg.org/voiders-community/repository</a></li>
+<li>Repository:
+<ul>
+<li><code>https://repo.voiders.dev</code></li>
+</ul></li>
+</ul>
+<h2 id="vostock---vostock-linux-repository">vostock - Vostock Linux
+repository</h2>
+<ul>
+<li>Arches: <code>x86_64</code></li>
+<li>Homepage: <a
+href="https://github.com/vostoklinux/vostok-packages">https://github.com/vostoklinux/vostok-packages</a></li>
+<li>Repository:
+<ul>
+<li><code>https://repo.vostoklinux.org/current</code></li>
+</ul></li>
+</ul>
+<h2 id="xlibre---xlibre-repository-by-sofijacom">xlibre - Xlibre
+repository by sofijacom</h2>
+<ul>
+<li>Arches: <code>x86_64</code></li>
+<li>Homepage: <a
+href="https://github.com/xlibre-void/xlibre">https://github.com/xlibre-void/xlibre</a></li>
+<li>Repository:
+<ul>
+<li><code>https://github.com/xlibre-void/xlibre/releases/latest/download</code></li>
+</ul></li>
+</ul>
+<script>
+(function () {
+  function hexToRgb(hex) {
+    hex = hex.trim().replace(/^#/, '');
+    if (hex.length === 3) hex = hex.split('').map(c => c + c).join('');
+    const n = parseInt(hex, 16);
+    return [n >> 16 & 255, n >> 8 & 255, n & 255];
+  }
+
+  function clamp(v, min, max) {
+    return Math.min(Math.max(v, min), max);
+  }
+
+  function Color(r, g, b) {
+    this.r = r / 255;
+    this.g = g / 255;
+    this.b = b / 255;
+  }
+
+  Color.prototype.applyFilter = function (funcs) {
+    let [r, g, b] = [this.r * 255, this.g * 255, this.b * 255];
+
+    function multiply(matrix) {
+      const nr = clamp(r * matrix[0] + g * matrix[1] + b * matrix[2], 0, 255);
+      const ng = clamp(r * matrix[3] + g * matrix[4] + b * matrix[5], 0, 255);
+      const nb = clamp(r * matrix[6] + g * matrix[7] + b * matrix[8], 0, 255);
+      r = nr; g = ng; b = nb;
+    }
+
+    function hueRotate(angle) {
+      const a = angle / 180 * Math.PI;
+      const sin = Math.sin(a), cos = Math.cos(a);
+      multiply([
+        0.213 + cos*0.787 - sin*0.213, 0.715 - cos*0.715 - sin*0.715, 0.072 - cos*0.072 + sin*0.928,
+        0.213 - cos*0.213 + sin*0.143, 0.715 + cos*0.285 + sin*0.140, 0.072 - cos*0.072 - sin*0.283,
+        0.213 - cos*0.213 - sin*0.787, 0.715 - cos*0.715 + sin*0.715, 0.072 + cos*0.928 + sin*0.072,
+      ]);
+    }
+
+    function sepia(v) {
+      multiply([
+        0.393 + 0.607*(1-v), 0.769 - 0.769*(1-v), 0.189 - 0.189*(1-v),
+        0.349 - 0.349*(1-v), 0.686 + 0.314*(1-v), 0.168 - 0.168*(1-v),
+        0.272 - 0.272*(1-v), 0.534 - 0.534*(1-v), 0.131 + 0.869*(1-v),
+      ]);
+    }
+
+    function saturate(v) {
+      multiply([
+        0.213 + 0.787*v, 0.715 - 0.715*v, 0.072 - 0.072*v,
+        0.213 - 0.213*v, 0.715 + 0.285*v, 0.072 - 0.072*v,
+        0.213 - 0.213*v, 0.715 - 0.715*v, 0.072 + 0.928*v,
+      ]);
+    }
+
+    for (const [fn, val] of funcs) {
+      if (fn === 'invert')    { r = clamp((1-r/255)*255*val + r/255*255*(1-val),0,255); g = clamp((1-g/255)*255*val + g/255*255*(1-val),0,255); b = clamp((1-b/255)*255*val + b/255*255*(1-val),0,255); }
+      if (fn === 'sepia')     sepia(val);
+      if (fn === 'saturate')  saturate(val);
+      if (fn === 'hueRotate') hueRotate(val);
+      if (fn === 'brightness'){ r = clamp(r*val,0,255); g = clamp(g*val,0,255); b = clamp(b*val,0,255); }
+    }
+
+    return new Color(r, g, b);
+  };
+
+  function loss(result, target) {
+    return (
+      Math.pow(result.r*255 - target.r*255, 2) +
+      Math.pow(result.g*255 - target.g*255, 2) +
+      Math.pow(result.b*255 - target.b*255, 2)
+    );
+  }
+
+  function solve(target) {
+    function css(v) {
+      return [
+        ['invert',    clamp(v[0], 0, 1)],
+        ['sepia',     clamp(v[1], 0, 1)],
+        ['saturate',  clamp(v[2], 0, 20)],
+        ['hueRotate', clamp(v[3], 0, 360)],
+        ['brightness',clamp(v[4], 0, 10)],
+        ['brightness',clamp(v[5], 0, 10)],
+      ];
+    }
+
+    function score(v) {
+      return loss(new Color(0,0,0).applyFilter(css(v)), target);
+    }
+
+    let best = null, bestScore = Infinity;
+    for (let i = 0; i < 30; i++) {
+      let v = [Math.random(), Math.random(), Math.random()*10, Math.random()*360, Math.random()*2, Math.random()*2];
+      for (let step = 1; step > 0.0001; step *= 0.9) {
+        for (let j = 0; j < v.length; j++) {
+          const orig = v[j];
+          v[j] += step * (Math.random() > 0.5 ? 1 : -1);
+          const s = score(v);
+          if (s < bestScore) { bestScore = s; best = [...v]; }
+          else v[j] = orig;
+        }
+      }
+    }
+
+    const f = css(best);
+    return [
+      `invert(${(clamp(f[0][1],0,1)*100).toFixed(0)}%)`,
+      `sepia(${(clamp(f[1][1],0,1)*100).toFixed(0)}%)`,
+      `saturate(${(clamp(f[2][1],0,20)*100).toFixed(0)}%)`,
+      `hue-rotate(${clamp(f[3][1],0,360).toFixed(0)}deg)`,
+      `brightness(${(clamp(f[4][1],0,10)*100).toFixed(0)}%)`,
+      `brightness(${(clamp(f[5][1],0,10)*100).toFixed(0)}%)`,
+    ].join(' ');
+  }
+
+  // Cache solved filters per color so theme switching is instant
+  const cache = {};
+
+  function applyIconColor() {
+    const raw = getComputedStyle(document.documentElement)
+      .getPropertyValue('--color-icon').trim();
+    if (!raw) return false;
+
+    let rgb;
+    if (raw.startsWith('#')) {
+      rgb = hexToRgb(raw);
+    } else if (raw.startsWith('rgb')) {
+      rgb = raw.match(/\d+/g).map(Number).slice(0, 3);
+    } else {
+      return false;
+    }
+
+    const key = rgb.join(',');
+    if (!cache[key]) {
+      cache[key] = solve(new Color(...rgb));
+    }
+
+    document.documentElement.style.setProperty('--filter-icon', cache[key]);
+    return true;
+  }
+
+  function init() {
+    if (!applyIconColor()) return;
+
+    // Watch for data-theme attribute changes on <html> — re-apply immediately
+    new MutationObserver(function(mutations) {
+      for (const m of mutations) {
+        if (m.attributeName === 'data-theme') {
+          applyIconColor();
+          break;
+        }
+      }
+    }).observe(document.documentElement, { attributes: true });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+</body>
+</html>
